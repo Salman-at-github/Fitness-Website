@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#head {
+    text-align: center;
+    background-color: cyan;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.input {
+    background-color: rgb(248, 248, 196);
+    width: 600px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid rgb(253, 252, 255);
+    border-radius: 10px;
+}
+
+.myForm {
+    height: 79vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    outline: none;
+}
+.btn {
+    margin: 0.5rem;
+    padding: 5px;
+    border: 2px solid blue;
+    border-radius: 1rem;
+    background-color: black;
+    color: aliceblue;
+}
+.btn:hover {
+    cursor: pointer;
+    color: rgb(249, 255, 68);
+    border: 2px solid blue;
+    box-shadow: 0px 3px 8px 1px cyan;
+}
+#footer{
+    border: 1px solid rgb(165, 165, 245);
+}

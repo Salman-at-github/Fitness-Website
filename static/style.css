@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div#logo img {
+    height: 3rem;
+    filter: invert(1);
+}
+
+#navbar {
+    border: 1px solid rgb(165, 165, 245);
+    background-color: black;
+    font-family: 'Yeon Sung';
+    padding: 13px, 14px;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#navbar li {
+    list-style: none;
+}
+
+#navbar li a {
+    color: rgb(248, 39, 213);
+    text-decoration: none;
+    padding: 13px 15px;
+}
+
+#navbar li a:hover {
+    color: white;
+}
+
+#introSection {
+    color: #fcfcfc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'ZCOOL QingKe HuangYou';
+    font-size: 65px;
+    align-items: center;
+    height: 53vh;
+    text-decoration: overline;
+}
+
+#introSection ::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../static/img/homebg.jpg);
+    background-size: cover;
+    /* or contain depending on what you want */
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 63vh;
+
+
+}
+
+#introSection div.small {
+    font-size: 45px;
+    padding: 5px;
+    color: red;
+    font-family: fantasy;
+}
+
+#missionSection {
+    height: 326px;
+    width: 97.45%;
+    margin: auto;
+    border: 16px;
+    border-color: #575757;
+    border-style: outset;
+}
+
+#missionSection h2 {
+    background-color: #f3f3f4;
+    font-size: 36px;
+    font-family: 'Yeon Sung';
+    text-align: center;
+    padding-top: 12px;
+}
+
+.card {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 46%;
+    margin: 23px 20px;
+    height: 214px;
+}
+
+.card h3 {
+    text-align: center;
+    margin: 0 12px;
+    margin-top: 24px;
+    font-family: cursive;
+}
+
+#logo {
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0 14px;
+    font-size: 28px;
+    margin-right: 40px;
+}
+#logo a{
+    text-decoration: none;
+    color: white;
+}
+
+.card-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    padding-left: 0;
+
+}
+
+.card-img {
+    height: 131px;
+    margin-right: 10px;
+}
+
+.card-img img {
+    height: inherit;
+}
+
+#box {
+    background-color: #f5f4f4;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#sponsorsSection {
+    padding: 30px;
+    text-align: center;
+    background-color: cornflowerblue;
+}
+
+#sponsorsSection h2 {
+    font-size: xx-large;
+    color: rgb(5, 5, 5);
+}
+
+.splogo {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.spImage {
+    height: 80px;
+    margin: 20px;
+}
+
+#footer {
+    color: aliceblue;
+    background-color: black;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgb(165, 165, 245);
+}
+#exception{
+    background-color: white;
+}

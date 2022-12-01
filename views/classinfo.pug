@@ -1,0 +1,20 @@
+extends base.pug 
+
+block style 
+    style
+        include ../static/style.css
+        include ../static/classinfo.css
+block content
+    div.classcont 
+        h1#chead Weekly Classes Info
+        div#classinfobox
+            div#male
+                div.maleimg
+                  img(src="../static/img/male.jpg")
+                div.malep 
+                  p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia obcaecati, fugit itaque eos cumque architecto maxime fugiat earum dicta nemo sapiente commodi necessitatibus ducimus est ipsum numquam, quibusdam cupiditate perspiciatis?
+            div#female
+                div.femaleimg
+                  img(src="../static/img/female.jpg")
+                div.femalep 
+                  p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia obcaecati, fugit itaque eos cumque architecto maxime fugiat earum dicta nemo sapiente commodi necessitatibus ducimus est ipsum numquam, quibusdam cupiditate perspiciatis?

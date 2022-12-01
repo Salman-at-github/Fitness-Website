@@ -1,0 +1,40 @@
+#infobox {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    height: 83.3vh;
+    width: 97.45%;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+/* to add opacity background img */
+#infobox ::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1.0) ), url(../static/img/aboutbg.jpg) no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#infobox h1 {
+    font-family: cursive;
+    margin: 10px;
+    text-align: center;
+    display: block;
+    padding-bottom: 10px;
+}
+
+#infobox p {
+    padding: 30px;
+    border: 2px solid red;
+    color: #f9e960;
+    font-family: monospace;
+
+}

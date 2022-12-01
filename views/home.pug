@@ -1,0 +1,54 @@
+//- inherits base.pug
+extends base.pug
+
+
+//- fill the css block
+block style 
+    style
+      include ../static/style.css
+
+//- fill body content block
+block content
+    section#introSection
+        div Welcome to Ryo's Fitness Academy
+        div.small Eat Sleep Workout Repeat
+    section#missionSection
+        h2 Our Mission
+        div#box
+          div.card
+              h3 Fitness Perfection
+              div.card-box
+                  div.card-img
+                      img(src="../static/img/1.jpg",alt="img")
+                  div.card-content
+                      p This is the best Fitness academy of the universe
+
+          div.card#exception
+              h3 No Pain No Gain
+              div.card-box
+                  div.card-img
+                      img(src="../static/img/2.jpg")
+                  div.card-content
+                      p This is the best fitness academy of the universe
+
+          div.card
+              h3 Expert Trainers
+              div.card-box
+                  div.card-img
+                      img(src="../static/img/3.jpg")
+
+                  div.card-content
+                      p This is the best fitness academy of the universe
+
+    section#sponsorsSection
+      h2 Our Sponsors
+        div.splogo
+          img(src= "../static/img/apple.png", alt= "Sponsor Image", class= "spImage")
+          img(src= "../static/img/facebook.png", alt= "Sponsor Image", class= "spImage")
+          img(src= "../static/img/ibm.png", alt= "Sponsor Image", class= "spImage")
+          img(src= "../static/img/microsoft.png", alt= "Sponsor Image", class= "spImage")
+    
+
+//- fill the script block
+block scripts
+    script(src="../static/index.js")
