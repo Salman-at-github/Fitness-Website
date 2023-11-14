@@ -34,19 +34,13 @@ app.get("/classinfo", (req, res)=>{
 
 
 
-//START THE SERVER
-app.listen(port,()=>{
-    console.log(`App started on ${port} port!`)
-});
-
-
 //MONGOOSE INTEGRATION
 
 
 //get mongoose for data (folder named contactDetails will be created)
 const mongoose = require('mongoose')
 mongoose.connect('mongodb://127.0.0.1/contactDetails', {useNewUrlParser:true},{useUnifiedTopology: true });
-const bodyparser = require('body-parser')
+const bodyparser = require('body-parser');
 
 //define Schema for contact details
 var contactSchema = new mongoose.Schema({
@@ -72,4 +66,11 @@ app.post('/contact', (req,res)=>{
 Contact.find({}, function(err,person){                //insdie {} we can add name:whatever to find the specific object
     if (err) return console.error(err);
     console.log(person);
+});
+
+
+
+//START THE SERVER
+app.listen(port,()=>{
+    console.log(`App started on ${port} port!`)
 });
